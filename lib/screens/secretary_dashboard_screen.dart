@@ -267,7 +267,7 @@ class _SecretaryDashboardScreenState extends State<SecretaryDashboardScreen> {
                               isActuallyInClinic: _doctorIsActuallyInClinic,
                               currentLocation: _doctorCurrentLocation,
                             ),
-                            const SizedBox(height: 16),
+                            const SizedBox(height: 20),
                             _SectionHeader(
                               title: "Today's Consultations",
                               actionLabel: _showAllConsultations

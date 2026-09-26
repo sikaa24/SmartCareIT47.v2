@@ -297,6 +297,7 @@ class _ManageSlotsPanelState extends State<ManageSlotsPanel> {
                 label: Text(loc),
                 selected: selected,
                 selectedColor: const Color(0xFF006B2D),
+                checkmarkColor: Colors.white,
                 labelStyle: TextStyle(
                   color: selected ? Colors.white : const Color(0xFF006B2D),
                   fontWeight: FontWeight.bold,

@@ -241,7 +241,7 @@ class _DoctorDashboardScreenState extends State<DoctorDashboardScreen> {
               isActuallyInClinic: isActuallyInClinic,
               currentLocation: currentLocation,
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
             const _SectionTitle("Doctor Status"),
             const SizedBox(height: 12),
             _DoctorStatusBanner(
@@ -336,7 +336,7 @@ class _DoctorDashboardScreenState extends State<DoctorDashboardScreen> {
                             ),
                             const SizedBox(height: 16),
                             _buildGeofencingSection(),
-                            const SizedBox(height: 16),
+                            const SizedBox(height: 20),
                             _SectionHeader(
                               title: "Today's Consultations",
                               actionLabel: _showAllConsultations

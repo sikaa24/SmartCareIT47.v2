@@ -569,7 +569,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                     ],
                                   ),
-                                  const SizedBox(height: 8),
+                                  const SizedBox(height: 20),
                                   _SectionTitle(
                                     title: "Upcoming Appointment",
                                     onViewAll: () {
@@ -1012,7 +1012,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(height: 8),
+                                  const SizedBox(height: 20),
                                   const _SectionTitle(
                                     title: "Doctor Availability",
                                   ),
@@ -1024,7 +1024,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                                       );
                                     },
                                   ),
-                                  const SizedBox(height: 8),
+                                  const SizedBox(height: 20),
                                   const _SectionTitle(title: "Quick Actions"),
                                   const SizedBox(height: 10),
                                   _QuickActionGrid(
@@ -1297,7 +1297,7 @@ class _SectionTitle extends StatelessWidget {
               tapTargetSize: MaterialTapTargetSize.shrinkWrap,
             ),
             child: const Text(
-              "View All",
+              "View All >",
               style: TextStyle(
                 color: Color(0xFF16751F),
                 fontSize: 13,

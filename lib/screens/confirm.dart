@@ -48,11 +48,94 @@ class AppointmentConfirmScreen extends StatelessWidget {
                               color: const Color(0xFFE6F9E6),
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            child: const Center(
-                              child: Icon(
-                                Icons.check_circle,
-                                color: Color(0xFF0DA94C),
-                                size: 48,
+                            child: Center(
+                              child: SizedBox(
+                                width: 40,
+                                height: 40,
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    DecoratedBox(
+                                      decoration: const BoxDecoration(
+                                        color: Color(0xFF0DA94C),
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: const SizedBox(
+                                        width: 40,
+                                        height: 40,
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.calendar_today,
+                                            color: Colors.white,
+                                            size: 27,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 0,
+                                      bottom: 0,
+                                      child: DecoratedBox(
+                                        decoration: const BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: SizedBox(
+                                          width: 16,
+                                          height: 16,
+                                          child: Center(
+                                            child: SizedBox(
+                                              width: 10,
+                                              height: 10,
+                                              child: Stack(
+                                                children: [
+                                                  Positioned(
+                                                    left: 1,
+                                                    top: 4,
+                                                    child: Transform.rotate(
+                                                      angle: -0.75,
+                                                      child: const SizedBox(
+                                                        width: 2,
+                                                        height: 5,
+                                                        child: DecoratedBox(
+                                                          decoration:
+                                                              BoxDecoration(
+                                                                color: Color(
+                                                                  0xFF0DA94C,
+                                                                ),
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 4,
+                                                    top: 1,
+                                                    child: Transform.rotate(
+                                                      angle: 0.75,
+                                                      child: const SizedBox(
+                                                        width: 2,
+                                                        height: 8,
+                                                        child: DecoratedBox(
+                                                          decoration:
+                                                              BoxDecoration(
+                                                                color: Color(
+                                                                  0xFF0DA94C,
+                                                                ),
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
@@ -72,7 +155,7 @@ class AppointmentConfirmScreen extends StatelessWidget {
                           Text(
                             isExistingView
                                 ? "You already have a booked appointment. Cancel it first if you'd like to book a different one."
-                                : "Your appointment is confirmed. Kindly arrive before the scheduled time and scan your QR code at the kiosk.",
+                                : "Your appointment is confirmed. Kindly arrive before the scheduled time.",
                             textAlign: TextAlign.center,
                             style: const TextStyle(
                               color: Color(0xFF6E8D73),

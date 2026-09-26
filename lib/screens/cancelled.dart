@@ -41,11 +41,61 @@ class AppointmentCancelledScreen extends StatelessWidget {
                               color: const Color(0xFFFFEBEB),
                               borderRadius: BorderRadius.circular(30),
                             ),
-                            child: const Center(
-                              child: Icon(
-                                Icons.cancel,
-                                color: Color(0xFFD32F2F),
-                                size: 48,
+                            child: Center(
+                              child: SizedBox(
+                                width: 40,
+                                height: 40,
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    DecoratedBox(
+                                      decoration: BoxDecoration(
+                                        color: Color(0xFFD32F2F),
+                                        shape: BoxShape.circle,
+                                      ),
+                                      child: SizedBox(
+                                        width: 40,
+                                        height: 40,
+                                        child: Center(
+                                          child: Icon(
+                                            Icons.calendar_today,
+                                            color: Colors.white,
+                                            size: 27,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      right: 0,
+                                      bottom: 0,
+                                      child: DecoratedBox(
+                                        decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          shape: BoxShape.circle,
+                                        ),
+                                        child: SizedBox(
+                                          width: 16,
+                                          height: 16,
+                                          child: Center(
+                                            child: SizedBox(
+                                              width: 9,
+                                              height: 3,
+                                              child: DecoratedBox(
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xFFD32F2F),
+                                                  borderRadius:
+                                                      BorderRadius.all(
+                                                        Radius.circular(2),
+                                                      ),
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
