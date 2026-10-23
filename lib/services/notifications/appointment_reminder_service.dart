@@ -48,7 +48,7 @@ class AppointmentReminderService {
     }
 
     const androidSettings = AndroidInitializationSettings(
-      '@mipmap/ic_launcher',
+      '@mipmap/launcher_icon',
     );
     const iosSettings = DarwinInitializationSettings();
     const settings = InitializationSettings(
